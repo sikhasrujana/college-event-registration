@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusX | College Events</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="/" class="brand">
+        <span>✦</span> CampusX
+    </a>
+
+    <nav>
+        <a href="/" class="active">Home</a>
+        <a href="/events">Events</a>
+        <a href="/register">Register</a>
+        <a href="/admin">Dashboard</a>
+    </nav>
+
+    <a href="/register" class="nav-button">
+        Join Event
+    </a>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-tag">
+            ✨ YOUR CAMPUS. YOUR MOMENT.
+        </div>
+
+        <h1>
+            Experience.
+            <span>Participate.</span>
+            Celebrate.
+        </h1>
+
+        <p>
+            Discover exciting college events, meet new people,
+            showcase your talent and create unforgettable memories.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="/events" class="primary-btn">
+                Explore Events →
+            </a>
+
+            <a href="/register" class="outline-btn">
+                Register Now
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>04+</strong>
+                <small>Events</small>
+            </div>
+
+            <div>
+                <strong>100+</strong>
+                <small>Students</small>
+            </div>
+
+            <div>
+                <strong>01</strong>
+                <small>Campus</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="eyebrow">DISCOVER</span>
+            <h2>What's happening?</h2>
+        </div>
+
+        <a href="/events" class="view-link">
+            View all events →
+        </a>
+
+    </div>
+
+
+    <div class="event-grid">
+
+        <div class="home-event-card">
+
+            <div class="event-image tech">
+                💻
+            </div>
+
+            <div class="event-card-content">
+
+                <span class="category">TECH</span>
+
+                <h3>Hackathon</h3>
+
+                <p>
+                    Build ideas, solve problems and create
+                    something amazing with your team.
+                </p>
+
+                <div class="event-info">
+                    📅 10 Oct 2026
+                    <span>•</span>
+                    📍 Computer Lab
+                </div>
+
+                <a href="/register" class="card-link">
+                    Register →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="home-event-card">
+
+            <div class="event-image cultural">
+                🎤
+            </div>
+
+            <div class="event-card-content">
+
+                <span class="category pink">CULTURAL</span>
+
+                <h3>Cultural Fest</h3>
+
+                <p>
+                    Music, dance, art and performances
+                    that bring the campus alive.
+                </p>
+
+                <div class="event-info">
+                    📅 15 Oct 2026
+                    <span>•</span>
+                    📍 Auditorium
+                </div>
+
+                <a href="/register" class="card-link">
+                    Register →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="home-event-card">
+
+            <div class="event-image sports">
+                🏆
+            </div>
+
+            <div class="event-card-content">
+
+                <span class="category green">SPORTS</span>
+
+                <h3>Sports Meet</h3>
+
+                <p>
+                    Compete with your friends and
+                    represent your department.
+                </p>
+
+                <div class="event-info">
+                    📅 20 Oct 2026
+                    <span>•</span>
+                    📍 College Ground
+                </div>
+
+                <a href="/register" class="card-link">
+                    Register →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="why-section">
+
+    <div class="why-content">
+
+        <span class="eyebrow">WHY CAMPUSX?</span>
+
+        <h2>
+            More than an event.
+            <br>
+            It's your college experience.
+        </h2>
+
+        <p>
+            Learn new skills, meet amazing people,
+            step outside your comfort zone and make
+            memories that last beyond college.
+        </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="why-icon">🎯</div>
+            <h3>Challenge Yourself</h3>
+            <p>Discover what you can achieve.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🤝</div>
+            <h3>Meet People</h3>
+            <p>Connect with students across campus.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🚀</div>
+            <h3>Grow Together</h3>
+            <p>Learn, compete and celebrate together.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-brand">
+        ✦ CampusX
+    </div>
+
+    <p>
+        College Event Registration Platform
+    </p>
+
+    <span>
+        © 2026 CampusX
+    </span>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CampusX | Register</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="/" class="brand">
+        <span>✦</span> CampusX
+    </a>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/events">Events</a>
+        <a href="/register" class="active">Register</a>
+        <a href="/admin">Dashboard</a>
+    </nav>
+
+    <a href="/events" class="nav-button">
+        Events
+    </a>
+
+</header>
+
+
+<section class="register-page">
+
+    <div class="register-intro">
+
+        <span class="eyebrow">JOIN THE EXPERIENCE</span>
+
+        <h1>
+            Reserve your
+            <span>spot.</span>
+        </h1>
+
+        <p>
+            Fill in your details and become part
+            of the campus event.
+        </p>
+
+        <div class="register-benefits">
+
+            <div>
+                <span>✓</span>
+                Quick registration
+            </div>
+
+            <div>
+                <span>✓</span>
+                Multiple events
+            </div>
+
+            <div>
+                <span>✓</span>
+                Instant confirmation
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <form method="POST"
+              action="/register"
+              id="registrationForm">
+
+            <div class="form-heading">
+
+                <h2>Student Details</h2>
+
+                <p>
+                    Please enter accurate information.
+                </p>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="two-columns">
+
+                <div class="input-group">
+
+                    <label>Mobile Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="10 digit number"
+                        pattern="[0-9]{10}"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Department</label>
+
+                    <select name="department" required>
+
+                        <option value="">
+                            Select
+                        </option>
+
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>Mechanical</option>
+                        <option>Civil</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Select Event</label>
+
+                <select name="event" required>
+
+                    <option value="">
+                        Choose an event
+                    </option>
+
+                    <option>Hackathon</option>
+                    <option>Cultural Fest</option>
+                    <option>Sports Meet</option>
+                    <option>Quiz Competition</option>
+
+                </select>
+
+            </div>
+
+
+            <button type="submit"
+                    class="submit-btn">
+
+                Complete Registration →
+                
+            </button>
+
+
+            <p class="secure-text">
+                🔒 Your information is securely stored.
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-brand">
+        ✦ CampusX
+    </div>
+
+    <p>College Event Registration Platform</p>
+
+    <span>© 2026 CampusX</span>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

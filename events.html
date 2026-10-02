@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusX | Events</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="/" class="brand">
+        <span>✦</span> CampusX
+    </a>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/events" class="active">Events</a>
+        <a href="/register">Register</a>
+        <a href="/admin">Dashboard</a>
+    </nav>
+
+    <a href="/register" class="nav-button">
+        Join Event
+    </a>
+
+</header>
+
+
+<section class="page-hero">
+
+    <span class="eyebrow">CAMPUS CALENDAR</span>
+
+    <h1>Upcoming Events</h1>
+
+    <p>
+        Find something you love. Pick an event.
+        Make it memorable.
+    </p>
+
+</section>
+
+
+<section class="events-page">
+
+    <div class="filter-bar">
+
+        <input
+            type="text"
+            id="eventSearch"
+            placeholder="🔍 Search events..."
+        >
+
+        <button class="filter active-filter"
+                onclick="filterEvents('all')">
+            All
+        </button>
+
+        <button class="filter"
+                onclick="filterEvents('tech')">
+            Tech
+        </button>
+
+        <button class="filter"
+                onclick="filterEvents('cultural')">
+            Cultural
+        </button>
+
+        <button class="filter"
+                onclick="filterEvents('sports')">
+            Sports
+        </button>
+
+    </div>
+
+
+    <div class="full-event-grid" id="eventsList">
+
+
+        <article class="full-event-card"
+                 data-category="tech"
+                 data-name="hackathon">
+
+            <div class="big-event-icon tech">
+                💻
+            </div>
+
+            <div class="event-details">
+
+                <span class="category">TECH</span>
+
+                <h2>Hackathon</h2>
+
+                <p>
+                    A coding challenge where teams turn
+                    creative ideas into working solutions.
+                </p>
+
+                <div class="details-row">
+                    <span>📅 10 October 2026</span>
+                    <span>📍 Computer Lab</span>
+                </div>
+
+                <a href="/register" class="primary-btn">
+                    Register Now
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="full-event-card"
+                 data-category="cultural"
+                 data-name="cultural fest">
+
+            <div class="big-event-icon cultural">
+                🎤
+            </div>
+
+            <div class="event-details">
+
+                <span class="category pink">CULTURAL</span>
+
+                <h2>Cultural Fest</h2>
+
+                <p>
+                    Celebrate creativity through music,
+                    dance, art and performances.
+                </p>
+
+                <div class="details-row">
+                    <span>📅 15 October 2026</span>
+                    <span>📍 College Auditorium</span>
+                </div>
+
+                <a href="/register" class="primary-btn">
+                    Register Now
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="full-event-card"
+                 data-category="sports"
+                 data-name="sports meet">
+
+            <div class="big-event-icon sports">
+                🏆
+            </div>
+
+            <div class="event-details">
+
+                <span class="category green">SPORTS</span>
+
+                <h2>Sports Meet</h2>
+
+                <p>
+                    Compete in exciting indoor and outdoor
+                    sports competitions.
+                </p>
+
+                <div class="details-row">
+                    <span>📅 20 October 2026</span>
+                    <span>📍 College Ground</span>
+                </div>
+
+                <a href="/register" class="primary-btn">
+                    Register Now
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="full-event-card"
+                 data-category="tech"
+                 data-name="quiz competition">
+
+            <div class="big-event-icon quiz">
+                🧠
+            </div>
+
+            <div class="event-details">
+
+                <span class="category purple">QUIZ</span>
+
+                <h2>Quiz Competition</h2>
+
+                <p>
+                    Test your knowledge and compete with
+                    the brightest minds on campus.
+                </p>
+
+                <div class="details-row">
+                    <span>📅 25 October 2026</span>
+                    <span>📍 Seminar Hall</span>
+                </div>
+
+                <a href="/register" class="primary-btn">
+                    Register Now
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-brand">
+        ✦ CampusX
+    </div>
+
+    <p>College Event Registration Platform</p>
+
+    <span>© 2026 CampusX</span>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
